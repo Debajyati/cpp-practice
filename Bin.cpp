@@ -21,6 +21,7 @@ public:
   static ulli getBinaryNumber(ulli num) {
     ulli result;
     stringstream& bs = getStream();
+    bs.str("");
     bs.clear();
     toBinary(num);
     bs >> result;
@@ -29,6 +30,7 @@ public:
   static string getBinaryString(ulli num) {
     string result;
     stringstream& bs = getStream();
+    bs.str("");
     bs.clear();
     toBinary(num);
     bs >> result;
